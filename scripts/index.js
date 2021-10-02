@@ -49,7 +49,7 @@ $(function() {
     if (pos2 > $('#home').offset().top)       { highlightLink('home'); }
     if (pos2 > $('#about').offset().top)      { highlightLink('about'); }
     if (pos2 > $('#portfolio').offset().top)  { highlightLink('portfolio'); }
-    //if (pos2 > $('#video').offset().top)       { highlightLink('video'); }
+    if (pos2 > $('#resume').offset().top)       { highlightLink('resume'); }
     if (pos2 > $('#contact').offset().top ||
         pos + $(window).height() === $(document).height()) {
           highlightLink('contact');

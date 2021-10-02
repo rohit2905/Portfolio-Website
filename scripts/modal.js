@@ -5,8 +5,8 @@ $(document).ready(function(){
     booktalks: {
       title: 'BookTalks',
       tag: 'Pet Project',
-      detail: 'Search and Post the reviews on your favourite books and also get free user suggestions and reviews of all available books. NOTE: App might not be functional sometimes due to database security reasons, write me up if required. :)',
-      link: 'http://ec2-52-91-134-149.compute-1.amazonaws.com/'
+      detail: 'In this project, you’ll build a book review website. Users will be able to register for your website and then log in using their username and password. Once they log in, they will be able to search for books, leave reviews for individual books, and see the reviews made by other people. You’ll also use the a third-party API by Goodreads, another book review website, to pull in ratings from a broader audience. Finally, users will be able to query for book details and book reviews programmatically via your website’s API.',
+      link: 'http://book09.herokuapp.com/'
     },
     fooddetection: {
       title: 'Food Detection',
@@ -25,6 +25,24 @@ $(document).ready(function(){
       tag: 'Pet Project',
       detail: 'Recognize the type of pattern and texture in an image.',
       link: 'http://ec2-3-83-217-19.compute-1.amazonaws.com/'
+    },
+    portfolio: {
+      title: 'Micro-experience',
+      tag: 'Projects by Crio.do',
+      detail: 'This is a portfolio issued by Crio.do, crio is a platform where users experience the real time developers by completing assigned real time projects. Visit site to check on each individual project description.',
+      link: 'https://criodo.github.io/Crio-Launch-Feb-2020-krohitgoud/'
+    },
+    htmlcss: {
+      title: 'My Website',
+      tag: 'Pet Project',
+      detail: 'A simple website consists of static web pages.',
+      link: 'https://rohit2905.github.io/htmlcss/'
+    },
+    wiki: {
+      title: 'Project Wiki',
+      tag: 'Pet Project',
+      detail: 'Project Wiki is a wikipedia where user can create content, edit content and also able to search for available wiki pages.',
+      link: 'http://wiki09.herokuapp.com'
     }
   };
 
@@ -110,7 +128,7 @@ $(document).ready(function(){
     });
     $.each($('#modal .slide'), function(index, value) {
       $(this).css({
-        background: "url('img/slides/" + id + '-' + index + ".jpg') center center/cover",
+        background: "url('"+window.location.href+"style/../img/slides/" + id + '-' + index + ".JPG') center center/cover",
         backgroundSize: 'cover'
       });
               

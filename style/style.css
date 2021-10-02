@@ -520,6 +520,9 @@ section:nth-of-type(1) .button .mdi {
 section:nth-of-type(1) .button:hover .mdi {
   transform: rotate(90deg);
 }
+section:nth-of-type(1) .button:hover #mdiplus {
+  transform: none;
+}
 section:nth-of-type(2) .label-wrap .label {
   margin: 20px 0 10px 0;
 }
@@ -717,26 +720,31 @@ section:nth-of-type(3) #gallery .mix .button:hover {
   color: #fff;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(1) .card {
-  background: url("img/books.jpg") center center/cover;
+  background: url("../img/wiki.png") center center/cover;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(2) .card {
-  background: url("img/pizza.jpg") center center/cover;
+  background: url("../img/thumb-1.jpg") center center/cover;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(3) .card {
+  background: url("../img/thumb-2.jpg") center center/cover;
+}
+
+section:nth-of-type(3) #gallery .mix:nth-child(4) .card {
   background: url("../img/thumb-3.jpg") center center/cover;
 }
-section:nth-of-type(3) #gallery .mix:nth-child(4) .card {
+
+section:nth-of-type(3) #gallery .mix:nth-child(5) .card {
   background: url("../img/thumb-4.jpg") center center/cover;
 }
-section:nth-of-type(3) #gallery .mix:nth-child(5) .card {
-  background: url("../img/thumb-5.jpg") center center/cover;
-}
+
 section:nth-of-type(3) #gallery .mix:nth-child(6) .card {
+  background: url("../img/thumb-5.JPG") center center/cover;
+}
+
+section:nth-of-type(3) #gallery .mix:nth-child(7) .card {
   background: url("../img/thumb-6.jpg") center center/cover;
 }
-section:nth-of-type(3) #gallery .mix:nth-child(7) .card {
-  background: url("../img/thumb-7.jpg") center center/cover;
-}
+/*
 section:nth-of-type(3) #gallery .mix:nth-child(8) .card {
   background: url("../img/thumb-8.jpg") center center/cover;
 }
@@ -752,6 +760,7 @@ section:nth-of-type(3) #gallery .mix:nth-child(11) .card {
 section:nth-of-type(3) #gallery .mix:nth-child(12) .card {
   background: url("../img/thumb-12.jpg") center center/cover;
 }
+*/
 section:nth-of-type(3) #gallery .mix .card {
   height: 240px;
   max-width: 100%;
@@ -987,15 +996,32 @@ footer .footnote .highlight {
   color: #e31b6d;
   font-family: "Open Sans";
 }
-
 @media screen and (max-width: 400px) {
   section:nth-of-type(3) #gallery .mix .card {
     width: 100vw;
   }
 }
+
+
+@media screen {
+  .navicon{
+    display: flex;
+  }
+  
+  
+}
+
 @media screen and (min-width: 600px) {
   body {
     font-size: 12pt;
+  }
+
+  .hire{
+    display: inline;
+  }
+
+  img.navicon{
+    display: none;
   }
 
   .container {
